@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>Survey | Feedback</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!--css file-->
+    <link rel="shortcut icon" href="https://cdn.explara.com/public/v_5.4.6/images/favicon.ico" type="image/icon" />
+
+    <!--css file-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://cdn.explara.com/public/v_10.0/internal-flow/common/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.explara.com/public/v_10.0/internal-flow/common/bootstrap-tour.css" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.explara.com/public/v_9.0/merchandise/css/bootstrap-theme.min.css">
+
+    <!-- Header footer Menu-->
+    <link href="https://cdn.explara.com/public/v_10.0/solution/styles/css/internalheader.css"  rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.explara.com/public/v_9.0/merchandise/css/sidemenu.css">
+    <link href="https://cdn.explara.com/public/v_10.0/solution/styles/css/internalfooter.css"  rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.explara.com/public/v_10.0/internal-flow/common/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.explara.com/public/v_10.0/internal-flow/common/cs-select.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.explara.com/public/v_10.0/internal-flow/common/cs-skin-elastic.css" />
+    <link rel="stylesheet" href="https://cdn.explara.com/public/v_10.0/css/login/login-signup.css">
+    <link href="https://cdn.explara.com/public/v_10.0/Survey/styles/css/theme.css" rel="stylesheet">
+    <style>
+        .survey-theme  {
+            margin-top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="col-xs-12 col-sm-12 col-md-12 survey-theme theme3">
+    <div class="col-xs-12 col-sm-12 col-md-12 survey-theme_wrapper">
+        <div class="container survey-theme_container confirmation-message" style="min-height: 800px;">
+            <div class="col-xs-12 col-sm-12 col-md-12 survey-header">
+                                <h2>Feedback</h2>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 survey-content">
+
+                <div class="col-xs-12 col-sm-12 col-md-12 submit-message">
+                                    </div>
+
+                                <form class="col-xs-12 col-sm-12 col-md-12 survey-form_section" id="save-survey-form">
+                    <center><span style="font-size:20px;">Please wait..Form is loading..</span></center>
+                </form>
+                <div class="col-xs-12 col-sm-12 col-md-12 button-section">
+                    <button class="btn branded-action--btn" id="save-survey-data" data-loading-text="<i class='fa fa-spinner fa-spin'></i> processing.." style="display:none;"> Submit </button>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 message-div">
+                    <p id="message" class="success-message" style="display: none;"></p>
+                </div>
+                            </div>
+        </div>
+    </div>
+
+</div>
+<!--<div class="col-xs-12 col-sm-12 col-md-12 theme-container">
+    <div class="col-xs-12 col-sm-12 col-md-12 theme_two">
+        <div class="container confirmation-message">
+            <div class="col-xs-12 col-sm-12 col-md-12 header-section">
+                <h2>Feedback</h2>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 submit-message">
+                            </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 dynamic-section">
+                <form class="col-xs-12 col-sm-12 col-md-12 form-section" id="save-survey-form">
+                    <center><span style="font-size:20px;">Please wait..Form is loading..</span></center>
+                </form>
+                <div class="col-xs-12 col-sm-12 col-md-12 button-section">
+                    <button class="btn branded-action--btn" id="save-survey-data" data-loading-text="<i class='fa fa-spinner fa-spin'></i> processing.." style="display:none;"> Submit </button>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 message-div">
+                    <p id="message" class="success-message" style="display: none;"></p>
+                </div>
+            </div>
+            
+        </div>
+    </div>-->
+<!-- New responsive comfirm box -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 400px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only" id="closeDiv">Close</span></button>-->
+                <center><h4 class="modal-title" id="modal_title">&nbsp;</h4><center>
+            </div>
+            <div class="modal-body">
+                <input type="password" class="form-control event-name-input" tabindex="1"  name="password" value="" id="password" title="Enter password" placeholder="Enter password">
+            </div>
+            <div class="modal-footer" style="border-top: none;">
+                <!--<button type="button" class="btn bg_gray" id="confirm_box_close" data-dismiss="modal">Close</button>-->
+                <div style="float:left;padding-left:10px;">
+                    <em><span id="error" style="display:none;font-size:12px;color:#dd4e4e;"><img src="https://cdn.explara.com/public/v_5.4.6/images/loader.gif" id="loader" style="width:20px; height:20px; padding-top:5px;" align="middle"></span></em>
+                </div>
+                <button type="button" class="btn btn-blue" id="confirm_box_button" onClick="verifyPassword();" style="background-color: #db4344;color: white;">&nbsp;</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- confirm box ends -->
+<div class="modal fade reg_modal login_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+   <div class="modal-dialog modal-lg" style="height:55%;">
+      <div class="modal-content register-content">
+         <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close"><img src="https://cdn.explara.com/public/v_10.0/images/png/multiply.png"></button>
+         <div class="container1 container_static">
+            <div class="info-box left">
+                <h2 class="heading">Have an account?</h2>
+               <p class="info-text">Sign in to manage your survey and make better decisions.</p>
+               </div>
+         </div>
+         <div class="container1 container_sliding">
+            <div class="slider-content text-center login">
+                <div class="social title">
+                  <button class="btn btn-block facebook-login" style="padding:0;"><span style="float: left;padding: 0 12px;font-size: 26px;border-right: 1px solid rgba(255, 255, 255, 0.15);"><i class="fa fa-facebook"></i></span>  <span style="line-height: 38px;">Login with Facebook</span></button>
+                  <!--<button class="btn btn-block eventbrite-login" style="margin-top:0;"><span style="float: left;padding: 0;border-right: 1px solid rgba(255, 255, 255, 0.15);"><img class="img-responsive" src="https://cdn.explara.com/public/v_9.0/eventconnect/images/Eventbright_logo.png"></span>  <span style="line-height: 38px;">Login with Eventbrite</span></button>-->
+               </div>
+               
+               <div class="separator-with-label" style="margin: 40px 0;">
+                  <hr>
+                  <label><span>OR</span></label>
+               </div>
+               <div class="text-title">
+                  <h1>Login with </h1>
+                  <img style="display: inline;vertical-align: inherit;" src="https://assetsstaging.explara.com/public/v_9.0/eventconnect/images/explara-logo.png">
+               </div>
+               <form class="login-form" style="margin-top:30px;">
+                  <div class="error login-error error-message text-center" style="display: none;text-align:center;"></div>
+                  <div class="success login-success sucess-messsage text-center" style="display: none;text-align:center;"></div>
+                  <span class="input input--sae">
+                  <!-- onkeypress="return isEmailKey(event);" keyup="return isEmailKey(event);" -->
+                  <input type="text" name="email" class="input__field input__field--sae"  autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+                  <label class="input__label input__label--sae" for="input-18">
+                  <i class="fa fa-fw fa-envelope-o icon icon--sae"></i>
+                  <span class="input__label-content input__label-content--sae">Email</span>
+                  </label>
+                  </span>
+                  <span class="input input--sae">
+                  <input type="password" name="password" class="input__field input__field--sae">
+                  <label class="input__label input__label--sae" for="input-18">
+                  <i class="fa fa-fw fa-lock icon icon--sae"></i>
+                  <span class="input__label-content input__label-content--sae">Password</span>
+                  </label>
+                  </span>
+                  <input class="email" type="hidden" name="source" value="web">
+                  <button class="button button-login facebook alt login-submit" data-role="button" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Loading..." style="color:#fff;">Login</button>
+               </form>
+               <p class="info-text alt"><a href="javascript:void(0);" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target=".forgot-password">Forgot password?</a></p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="modal fade verification-code sub-modal verification-code-content" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+   <div class="modal-dialog modal-sm" style="margin: auto;width:350px;">
+      <div class="modal-content forgot-content" style="margin-top: 15%;padding: 20px;">
+         <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close"><img src="https://cdn.explara.com/public/v_10.0/images/png/multiply.png"></button>
+         <div class="text-center title image">
+            <h1>Verify Verification Code</h1>
+         </div>
+         <form class="verification-code-from" style="text-align:center;">
+            <div class="error verification-code-error text-center" style="display: none;color:#db4344;"></div>
+            <div class="success verification-code-success text-center" style="display: none;padding-bottom: 10px;color:#70d5d9;"></div>
+            <span class="input input--sae">
+            <input type="text" class="input__field input__field--sae" name="verificationCode"  autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+            <label class="input__label input__label--sae" for="input-18">
+            <i class="fa fa-fw fa-envelope-o icon icon--sae"></i>
+            <span class="input__label-content input__label-content--sae">Verification Code</span>
+            </label>
+            </span>
+            <input type="hidden" name="accessToken" class="accToken">
+            <input type="hidden" name="source" value="forgotPassword">
+            <button class="button button-login alt verification-code-submit" data-role="button" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Loading...">Continue</button>
+            <a href="#" class="resendOtp text-center resend-verification-code" style="text-decoration: none;color:#db4344;">Resend Verification Code</a>
+         </form>
+      </div>
+   </div>
+</div>
+<div class="modal fade forgot-password sub-modal forgot-password-content" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+   <div class="modal-dialog modal-sm" style="margin: auto;width:390px;">
+      <div class="modal-content forgot-content" style="margin-top: 15%;padding: 20px;border-radius: 0;">
+         <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close"><img src="https://cdn.explara.com/public/v_10.0/images/png/multiply.png"></button>
+         <div class="text-center title image" style="margin:0;">
+            <h1>Forgot Your Password?</h1>
+            <p>Please enter your registered email-Id. You will receive a verification code to reset your password.</p>
+         </div>
+         <form class="forgot-password-form" style="text-align:center;">
+            <div class="error forgot-password-error error-message text-center" style="display: none;"></div>
+            <div class="success forgot-password-success sucess-messsage text-center" style="display: none;"></div>
+            <span class="input input--sae" style="width: 80%;">
+            <input type="email" class="input__field input__field--sae" autocorrect="off" autocapitalize="off" spellcheck="false" name="email">
+            <label class="input__label input__label--sae" for="input-18">
+            <i class="fa fa-fw fa-envelope-o icon icon--sae"></i>
+            <span class="input__label-content input__label-content--sae">email</span>
+            </label>
+            </span>
+            <button class="button button-login alt forgot-password-submit" style="width: 80% !important;padding: 6px 30px !important;" data-role="button" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Loading...">Submit</button>
+         </form>
+      </div>
+   </div>
+</div>
+<div class="modal fade reset-password sub-modal reset-password-content" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+   <div class="modal-dialog modal-sm" style="margin: auto;width:390px;">
+      <div class="modal-content forgot-content" style="margin-top: 15%;padding: 20px;border-radius: 0;">
+         <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close"><img src="https://cdn.explara.com/public/v_10.0/images/png/multiply.png"></button>
+         <div class="text-center title image" style="margin:0;">
+            <h1 style="color:#333;">Reset Password</h1>
+         </div>
+         <form class="reset-password-form" style="text-align:center;">
+            <div class="error reset-password-error error-message text-center" style="display: none;"></div>
+            <div class="success reset-password-success sucess-messsage text-center" style="display: none;"></div>
+            <span class="input input--sae">
+            <input type="password" class="input__field input__field--sae" name="newPassword">
+            <label class="input__label input__label--sae" for="input-18">
+            <i class="fa fa-fw fa-lock icon icon--sae"></i>
+            <span class="input__label-content input__label-content--sae">password</span>
+            </label>
+            </span>
+            <input type="hidden" name="accessToken" class="accToken">
+            <input type="hidden" name="source" value="web">
+            <span class="input input--sae">
+            <input type="password" class="input__field input__field--sae" name="confirmPassword">
+            <label class="input__label input__label--sae" for="input-18">
+            <i class="fa fa-fw fa-lock icon icon--sae"></i>
+            <span class="input__label-content input__label-content--sae">Confirm Password</span>
+            </label>
+            </span>
+            <button class="button button-login alt reset-password-submit" data-role="button" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Loading...">Reset Password</button>
+         </form>
+      </div>
+   </div>
+</div>
+
+<script src = "https://cdn.explara.com/public/v_10.0/js/login/classie.js"></script>
+<div class="modal fade reg_modal signup_modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+   <div class="modal-dialog modal-lg" style="height:55%;">
+      <div class="modal-content register-content">
+         <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close"><img src="https://cdn.explara.com/public/v_10.0/images/png/multiply.png"></button>
+         <div class="container1 container_static">
+            <div class="info-box left">
+                <h2 class="heading">New to Explara?</h2>
+               <p class="info-text">Start with your free account today. Create your own survey to gather inputs and insights from your event.</p>
+               </div>
+         </div>
+         <div class="container1 container_sliding">
+            <div class="slider-content text-center login">
+               <div class="social title">
+                  <button class="btn btn-block facebook-login" style="padding: 0;"><span style="float: left;padding: 0 12px;font-size: 26px;border-right: 1px solid rgba(255, 255, 255, 0.15);"><i class="fa fa-facebook"></i></span>  <span style="line-height: 38px;">Sign Up with Facebook</span></button>
+                  <!--<button class="btn btn-block eventbrite-login" style="margin-top:0;"><span style="float: left;padding: 0;border-right: 1px solid rgba(255, 255, 255, 0.15);"><img class="img-responsive" src="https://cdn.explara.com/public/v_9.0/eventconnect/images/Eventbright_logo.png"></span>  <span style="line-height: 38px;">Login with Eventbrite</span></button>-->
+               </div>
+               <div class="separator-with-label" style="margin-top: 10px;">
+                  <hr>
+                  <label><span>OR</span></label>
+               </div>
+               <div class="text-title" style="margin:30px 0 20px;">
+                  <h1>Create account with </h1>
+                  <img style="display: inline;vertical-align: inherit;" src="https://assetsstaging.explara.com/public/v_9.0/eventconnect/images/explara-logo.png">
+               </div>
+               <form class="signup-from" style="margin-top:20px;">
+                  <div class="success signup-success sucess-messsage text-center" style="display: none;text-align:center;"></div>
+                  <div class="error signup-error error-message text-center" style="display: none;text-align:center;"></div>
+                  <span class="input input--sae">
+                  <input type="text" class="input__field input__field--sae" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" name="name">
+                  <label class="input__label input__label--sae" for="input-18">
+                  <i class="fa fa-fw fa-user icon icon--sae"></i>
+                  <span class="input__label-content input__label-content--sae">name</span>
+                  </label>
+                  </span>
+                  <span class="input input--sae">
+                  <input type="email" id="signupEmailId" class="input__field input__field--sae" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" name="email">
+                  <label class="input__label input__label--sae" for="input-18">
+                  <i class="fa fa-fw fa-envelope-o icon icon--sae"></i>
+                  <span class="input__label-content input__label-content--sae">email</span>
+                  </label>
+                  </span>
+                  <span class="input input--sae">
+                  <input type="text" class="input__field input__field--sae" autocomplete="off" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" onkeypress="return isNumberKey(event);" keyup="return isNumberKey(event);"  name="phone">
+                  <label class="input__label input__label--sae" for="input-18">
+                  <i class="fa fa-fw fa-mobile icon icon--sae" style="font-size: 20px;"></i>
+                  <span class="input__label-content input__label-content--sae">mobile no</span>
+                  </label>
+                  </span>
+                  <span class="input input--sae">
+                  <input type="password" class="input__field input__field--sae" name="password">
+                  <label class="input__label input__label--sae" for="input-18">
+                  <i class="fa fa-fw fa-lock icon icon--sae"></i>
+                  <span class="input__label-content input__label-content--sae">password</span>
+                  </label>
+                  </span>
+                  <span class="checkbox-section">
+                    <div class="checkbox" id="agreeSignupDiv">
+                        <label>
+                            <input type="checkbox" id="agreeSignup" name="agreeSignup">
+                            <span class="checkbox-material">
+                                <span class="check"></span>
+                            </span>
+                            By signing up, you agree to our <a href="https://www.explara.com/terms-of-service" target="_blank"  style="color: #70d5d9 !important;">terms of service</a>
+                        </label>
+                    </div>
+                  </span>
+                  <input type="hidden" name="source" value="web">
+                  <button class="btn button facebook button-signup alt signup-submit" data-role="button" data-loading-text="<i class='fa fa-spinner fa-spin'></i> Loading..." style="color:#fff;">Sign Up</button>
+                  <p class="form-content terms">By signing up, you agree to our <a href="https://in.explara.com/terms-of-service" target="_blank"  style="color: #70d5d9 !important;">terms of service</a> </p>
+               </form></div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<script src = "https://cdn.explara.com/public/v_10.0/js/login/classie.js"></script>
+<script type="text/javascript" src="https://cdn.explara.com/public/v_9.0/merchandise/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.explara.com/public/v_9.0/merchandise/js/jquery-ui.min.js"></script>
+<script src="https://cdn.explara.com/public/v_10.0/internal-flow/common/bootstrap.min.js"></script>
+<script src="https://cdn.explara.com/public/v_10.0/internal-flow/common/classie.js"></script>
+<script src="https://cdn.explara.com/public/v_10.0/internal-flow/common/selectFx.js"></script>
+<script src="https://cdn.explara.com/public/v_10.0/js/login/external-survey-login-signup.js"></script>
+
+<script>
+    var status = false;
+    $(document).ready(function(){
+
+                        attendeeInfo();
+                
+        $("#save-survey-data").on("click",function (e) {
+            var fd = new FormData();
+            //fd.append($('#imageUrl').attr('name'),$('#imageUrl')[0].files[0]);
+            var other_data = $('#save-survey-form').serializeArray();
+            $.each(other_data,function(key,input){
+                fd.append(input.name,input.value);
+            });
+            fd.append('surveyId','35445');
+            fd.append('platform','surveyWeb');
+            fd.append('status',status);
+            var btn = $('#save-survey-data');
+            //btn.html("");
+            btn.button("loading");
+            $.ajax({
+                type: "POST",
+                url: 'https://in.explara.com/survey/survey/index/save-survey-data',
+                data	 :fd,
+                dataType    : 'json',
+                processData: false,  // tell jQuery not to process the data
+                contentType: false,
+                success: function(response){
+                    $('.errorMsg').html('').hide();
+                    $('.parent').removeClass('invalid');
+                    if(response.status == 'success' ){
+                        $('#message').html(response.message).show();
+                        setTimeout(function(){
+                            $('#message').html('').hide();
+                        },3000);
+                        var html = '<div class="col-xs-12 col-sm-12 col-md-12 submit-message"><div class="col-xs-12 col-sm-12 col-md-12 submit-message_wrapper"> <p class="default-message">';
+                        html += 'Thank you for taking this survey.';
+                                                                html += '</p> </div></div>';
+                        $('.confirmation-message').html(html).show();
+                        //$('.dynamic-section').hide();
+                                        }else{
+                        if(response.errors.length > 0) {
+                            $.each(response.errors, function (key, item) {
+                                $('#' + item.errorType + '_parent').addClass('invalid');
+                                $('#' + item.errorType + '_err_msg').addClass('error-message').text(item.message).show();
+                                $('#' + item.errorType).parent().addClass('input--filled');
+                                $('#' + item.errorType).parent().removeClass('input--filled-focusOut');
+                            });
+                        }else{
+                            if(response.errorType == 'captcha-message'){
+                                $('#'+response.errorType).text(response.message).show();
+                            }else{
+                                status = response.verified;
+                                $('#' + response.errorType + '_parent').addClass('invalid');
+                                $('#' + response.errorType + '_err_msg').addClass('error-message').text(response.message).show();
+                                $('#' + response.errorType).parent().addClass('input--filled');
+                                $('#' + response.errorType).parent().removeClass('input--filled-focusOut');
+                            }
+                        }
+                    }
+                    btn.button('reset');
+                }
+            })
+
+        });
+    });
+
+    function attendeeInfo(){
+        //$('#msg3main').hide();
+        //$('#msg3').html('');
+        $('#attendeeInfo').html('<div style="width:100%; text-align:center; float:left;"><img src="https://cdn.explara.com/public/v_8.0/loader.gif" style="width:50px; padding-top:50px;"></div>');
+        $('#proceed3').hide();
+        var response = $.ajax({
+            type: "POST",
+            data: 'surveyId=35445',
+            url: "https://in.explara.com/survey/survey/index/survey-info",
+            error: function(){
+                attendeeInfo();
+            },
+            timeout: 6000,
+            success: function(response){
+                $('#proceed2').removeClass('progress-bar-striped').html('proceed');
+                $('#save-survey-form').html(response);
+            }
+        });
+    }
+
+    
+
+    function verifyPassword(){
+        $('#error').show();
+        var password = $('#password').val();;
+        var response = $.ajax({
+            type	: "POST",
+            //dataType : "json",
+            url	: "https://in.explara.com/survey/survey/manage/verify-password",
+            data	: 'password='+password+'&surveyId=35445',
+            success: function(response){
+                if(response.id == 0) {
+                    $('#error').html(response.message);
+                    setTimeout(function(){
+                        $('#error').html('<img src="https://cdn.explara.com/public/v_5.4.6/images/loader.gif" id="loader" style="width:20px; height:20px; padding-top:5px;" align="middle">');
+                        $('#error').hide();
+                    },3000);
+                } else {
+                    $('#error').html("Visibility updated successfully..");
+                    setTimeout(function(){
+                        $('#error').html('<img src="https://cdn.explara.com/public/v_5.4.6/images/loader.gif" id="loader" style="width:20px; height:20px; padding-top:5px;" align="middle">');
+                        $('#error').hide();
+                    },3000);
+                    $('#myModal').modal('hide');
+                    attendeeInfo();
+                }
+            }
+        });
+        return false;
+    }
+
+    function saveFromData(data){
+        var fd = new FormData();
+        //fd.append($('#imageUrl').attr('name'),$('#imageUrl')[0].files[0]);
+        var other_data = $('#save-survey-form').serializeArray();
+        $.each(other_data,function(key,input){
+            fd.append(input.name,input.value);
+        });
+        fd.append('surveyId','35445');
+        fd.append('platform','surveyWeb');
+        var response = $.ajax({
+            type: "POST",
+            url: "https://in.explara.com/survey/survey/index/save-incomplete-feedback",
+            dataType: "json",
+            data: fd,
+            processData: false,  // tell jQuery not to process the data
+            contentType: false,
+            error: function(){
+                //processAttendee();
+            },
+            timeout: 10000,
+            success: function(response){
+                //console.log(response);
+                /*if(response.success == 2){
+                 $('#msg3main').show();
+                 $('#msg3').html(response.message);
+                 setTimeout(function(){
+                 $('#msg3').html('');
+                 $('#msg3main').hide();
+                 },3000);
+
+                 attendeeInfo();
+                 $('#proceed3').removeClass('progress-bar-striped').html('Submit');
+                 }*/
+            }
+        });
+    }
+
+    function validateData(fieldId,label) {
+        if ($("#"+fieldId).val().trim() == ''){
+            $('#' + fieldId + '_parent').addClass('invalid');
+            $('#' + fieldId + '_err_msg').addClass('error-message').text(label+" is empty").show();
+            $("#"+fieldId).focus();
+            return false;
+        }else{
+            $('#' + fieldId + '_parent').removeClass('invalid');
+            $('#' + fieldId + '_err_msg').removeClass('error-message').html('');
+        }
+    }
+
+</script>
+</body>
+
+</html>

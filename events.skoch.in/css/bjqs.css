@@ -1,0 +1,56 @@
+/* Basic jQuery Slider essential styles */
+.slide{ width:700px;
+float:left;
+ margin-bottom:5px;}
+ .slide1{ width:1100px;
+float:left;
+ margin-bottom:5px;}
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none; width:600px;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;
+}
+ul.bjqs-controls.v-centered li a{position:absolute;}
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0; border: none;}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0; border: none;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;
+display:none;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+
+
+.mrk_div{ width:100%; float: left;
+ border-bottom: dotted 1px #FFFFFF;
+ padding-bottom:10px;
+ padding-top:15px;
+  }
+  
+.mar_slide {
+width: 338px;
+border-top: solid 40px #EC6700;
+border-bottom: solid 40px #EC6700;
+border-left: solid 2px #EC6700;
+border-right: solid 2px #EC6700;
+height: 280px;
+padding: 20px;
+background-color: #F8F8DE;
+margin-top: -400px;
+float: right;
+margin-left: 772px;
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+}
+.mrk_div h3 {
+margin: 9px 0;
+font-weight: bold;
+line-height:25px;
+color: inherit;
+color:#ffffff;
+ font-size:16px;
+}
+
+.mrk_div p{ font-size:14px !important;
+color:#ffffff;}
+

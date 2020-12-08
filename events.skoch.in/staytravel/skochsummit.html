@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="https://cdn.explara.com/public/v_5.4.6/images/favicon.ico" type="image/icon" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+
+        <!-- Page CSS -->
+        <link rel="stylesheet" href="https://cdn.explara.com/public/v_10.0/staytravel-new/css/header.css">
+        <link rel="stylesheet" href="https://cdn.explara.com/public/v_10.0/staytravel-new/css/footer.css">
+        <link rel="stylesheet" href="https://cdn.explara.com/public/v_10.0/staytravel-new/css/nodata.css">
+
+        <link rel="stylesheet" href="https://cdn.explara.com/public/v_10.0/staytravel-new/css/hotel-landing-web.css">
+        <link rel="stylesheet" href="https://cdn.explara.com/public/v_10.0/external-pages/css/login-signup.css">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <title>Hotel Booking For SKOCH Summit - State Of Inclusion | 51st Edition | staytravel.explara.com</title>
+    </head>
+    <body>
+
+                    <!-- Header -->
+            <div class="row no-gutters header">
+    <nav class="col navbar navbar-expand-lg">
+        <ul class="navbar-nav left-section">
+            <li class="nav-item logo">
+                <a class="navbar-brand logo-image" href="/home">
+                    <img class="img-responsive" src="https://cdn.explara.com/public/v_9.0/experience/images/explara-logo.png">
+                </a>
+            </li>
+            <li class="nav-item arrow">
+                <img class="img-responsive" src="https://cdn.explara.com/public/v_10.0/solution/img/png/arrow.png">
+            </li>
+            <li class="nav-item product-logo">
+                <a class="nav-link " href="https://in.explara.com/staytravel/hotel/plans/dashboard">
+                    <img class="img-responsive product-logo" src="https://cdn.explara.com/public/v_10.0/solution/img/png/suitcase-128-3x.png">
+                    Stay & Travel
+                </a>
+            </li>
+        </ul>
+                <ul class="navbar-nav ml-auto right-section">
+                            <li class="row no-gutters action-section">
+                    <a class="loginid" href="javascript:void(0)" onkeydown="Javascript: if (event.keyCode==13) $(this).click();">Login</a>
+                    <button class="btn create-action_btn" onclick="$('#exampleModalCenter').modal()">Get Started</button>
+                </li>
+                    </ul>
+    </nav>
+</div>
+            <!-- End Header -->
+        
+        <div class="row no-gutters landing">
+            <div class="col landing-container">
+                <div class="row no-gutters landing-header">
+                    <div class="d-flex align-items-center landing-header_wrapper" >
+                        <div class="page-name">
+                            <h4>Hotel booking for SKOCH Summit - State of Inclusion | 51st Edition</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters landing-content">
+                    <div class="col landing-content_section">
+                        <div class="row no-gutters content-card">
+                                                            <div class="col-xs-12 col-sm-12 col-md-12 loader">
+                                    <div class="circle"></div>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="row no-gutters internal-content_footer">
+    <div class="col-12 footer">
+        <div class="container footer-container">
+            <div class="row no-gutters align-items-center footer-content">
+                <p>&copy; 2008 -
+                    2020 Signure Technologies Pvt. Ltd. All Rights Reserved.</p>
+                <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/survey-new/images/powered-by-explara.png" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!-- End footer -->
+
+        
+        <!--<div class="row no-gutters align-items-center landing-footer">
+            <p>Cart Subtotal (2 Items): <span>$ 199</span></p>
+            <button class="btn proceed-btn">Proceed to checkout</button>
+        </div>-->
+
+                    <div class="modal fade signup-modal login_modal" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="loginTitle"
+     aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <div class="modal-title" id="loginTitle">
+               <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/external-pages/img/explara_eye@3x.png" />
+               <h5>Sign in</h5>
+            </div>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/external-pages/img/cross.png" />
+            </button>
+         </div>
+         <div class="modal-body">
+            <div class="row no-gutters form-wrapper">
+               <form class="col form-input login-form">
+                   <div class="col-12 wrapper">
+                     <div class="row no-gutters wrapper-container">
+                        <div class="col">
+                           <div class="form-group input">
+                              <label for="email" class="editable-label">Email ID</label>
+                              <input type="email" name="email" class="form-control email"onkeyup="cleanErrorMsg('email','login-form');" aria-describedby="email_err_msg" placeholder="Email id">
+                              <p class="form-text err_msg email_err_msg"></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                   <div class="col-12 wrapper">
+                     <div class="row no-gutters wrapper-container">
+                        <div class="col">
+                           <div class="form-group input">
+                              <label for="password" class="editable-label">Password</label>
+                              <input type="password" name="password" class="form-control password" onkeyup="cleanErrorMsg('password','login-form');"  aria-describedby="password_err_msg" placeholder="Password">
+                              <p class="form-text password_err_msg"></p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                   <div class="col-12 form-action">
+                     <div class="row no-gutters align-items-center form-action_wrapper">
+                        <button type="button" class="btn btn-primary submit-btn login-submit">Login</button>
+                        <p data-dismiss="modal" href="" data-toggle="modal" data-target="#forgot-password">Forgot password?</p>
+                     </div>
+                  </div>
+                   <input class="email" type="hidden" name="source" value="web">
+               </form>
+               <div class="col-2 d-none d-sm-block separator">
+                  <div class="row no-gutters align-items-center separator-wrapper">
+                     <p>or</p>
+                  </div>
+               </div>
+               <div class="col d-none d-sm-block social-login">
+                  <div class="row no-gutters social-login_wrapper">
+
+                     <div class="d-flex align-items-crnter social facebook facebook-login">
+                        <div class="icon">
+                           <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/external-pages/img/facebook_f.png">
+                        </div>
+                        <div class="text">
+                           <p>Continue with Facebook</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="modal-footer">
+            <p>
+               <span>No account? </span>
+               <a data-dismiss="modal" href="" data-toggle="modal" data-target="#exampleModalCenter">Sign up</a>
+            </p>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="modal fade signup-modal forgot-password" id="forgot-password" tabindex="-1" role="dialog" aria-labelledby="forgotPasswordTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="forgotPasswordTitle">
+                    <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/external-pages/img/explara_eye@3x.png" />
+                    <h5>Forgot Your Password?</h5>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/external-pages/img/cross.png" />
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row no-gutters form-wrapper">
+                    <form class="col form-input forgot-password-form">
+                        <div class="col-12 wrapper">
+                            <div class="row no-gutters wrapper-container">
+                                <div class="col">
+                                    <div class="form-group input">
+                                        <label for="email" class="editable-label">Email ID</label>
+                                        <input type="email" name="email" class="form-control email" onkeyup="cleanErrorMsg('email','forgot-password-form');" aria-describedby="email_err_msg" placeholder="Email id">
+                                        <p class="form-text err_msg email_err_msg"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 form-action">
+                            <div class="row no-gutters align-items-center form-action_wrapper">
+                                <button type="button" class="btn btn-primary submit-btn forgot-password-submit">Submit</button>
+                            </div>
+                        </div>
+                        <input class="email" type="hidden" name="source" value="web">
+                    </form>
+                    <div class="col-2 separator">
+                        <div class="row no-gutters align-items-center separator-wrapper">
+                            <p>or</p>
+                        </div>
+                    </div>
+                    <div class="col social-login">
+                        <div class="row no-gutters social-login_wrapper">
+                            <div class="d-flex align-items-crnter social facebook facebook-login">
+                                <div class="icon">
+                                    <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/external-pages/img/facebook_f.png">
+                                </div>
+                                <div class="text">
+                                    <p>Continue with Facebook</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p>
+                    <span>Have an account? </span>
+                    <a data-dismiss="modal" href="" data-toggle="modal" data-target="#login-modal">Sign in</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade signup-modal verification-code" id="verification-code-content" tabindex="-1" role="dialog" aria-labelledby="verificationCodeContentTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="verificationCodeContentTitle">
+                    <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/external-pages/img/explara_eye@3x.png" />
+                    <h5>Verify Code?</h5>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/external-pages/img/cross.png" />
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row no-gutters form-wrapper">
+                    <form class="col form-input verification-code-from">
+                        <div class="col-12 wrapper">
+                            <div class="row no-gutters wrapper-container">
+                                <div class="col">
+                                    <div class="form-group input">
+                                        <label for="email" class="editable-label">Verification Code</label>
+                                        <input type="password" name="verificationCode" class="form-control verificationCode" onkeyup="cleanErrorMsg('verificationCode','verification-code-from');" aria-describedby="verificationCode_err_msg" placeholder="Enter Code">
+                                        <p class="form-text err_msg verificationCode_err_msg">We have send a verification code to your email id.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 form-action">
+                            <div class="row no-gutters align-items-center form-action_wrapper">
+                                <button type="button" class="btn btn-primary submit-btn verification-code-submit">Verify</button>
+                                <p class="resendOtp">Resend Verification Code</p>
+
+                            </div>
+                        </div>
+                        <input type="hidden" name="accessToken" class="accToken">
+                        <input type="hidden" name="source" value="forgotPassword">
+                    </form>
+                    <div class="col-2 separator">
+                        <div class="row no-gutters align-items-center separator-wrapper">
+                            <p>or</p>
+                        </div>
+                    </div>
+                    <div class="col social-login">
+                        <div class="row no-gutters social-login_wrapper">
+                            <div class="d-flex align-items-crnter social facebook facebook-login">
+                                <div class="icon">
+                                    <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/external-pages/img/facebook_f.png">
+                                </div>
+                                <div class="text">
+                                    <p>Continue with Facebook</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p>
+                    <span>Have an account? </span>
+                    <a data-dismiss="modal" href="" data-toggle="modal" data-target="#login-modal">Sign in</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade signup-modal reset-password" id="reset-password-content" tabindex="-1" role="dialog" aria-labelledby="resetPasswordContentTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="resetPasswordContentTitle">
+                    <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/external-pages/img/explara_eye@3x.png" />
+                    <h5>Reset Password</h5>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/external-pages/img/cross.png" />
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row no-gutters form-wrapper">
+                    <form class="col form-input reset-password-form">
+                        <div class="col-12 wrapper">
+                            <div class="row no-gutters wrapper-container">
+                                <div class="col">
+                                    <div class="form-group input">
+                                        <label for="email" class="editable-label">New Password</label>
+                                        <input type="password" name="newPassword" class="form-control newPassword" onkeyup="cleanErrorMsg('newPassword','reset-password-form');" aria-describedby="newPassword_err_msg" placeholder="New password">
+                                        <p class="form-text err_msg newPassword_err_msg"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 wrapper">
+                            <div class="row no-gutters wrapper-container">
+                                <div class="col">
+                                    <div class="form-group input">
+                                        <label for="email" class="editable-label">Confirm Password</label>
+                                        <input type="password" name="confirmPassword" class="form-control confirmPassword" onkeyup="cleanErrorMsg('confirmPassword','reset-password-form');" aria-describedby="confirmPassword_err_msg" placeholder="Confirm password">
+                                        <p class="form-text err_msg confirmPassword_err_msg"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 form-action">
+                            <div class="row no-gutters align-items-center form-action_wrapper">
+                                <button type="button" class="btn btn-primary submit-btn reset-password-submit">Confirm</button>
+                            </div>
+                        </div>
+                        <input type="hidden" name="accessToken" class="accToken">
+                        <input type="hidden" name="source" value="web">
+                    </form>
+                    <div class="col-2 separator">
+                        <div class="row no-gutters align-items-center separator-wrapper">
+                            <p>or</p>
+                        </div>
+                    </div>
+                    <div class="col social-login">
+                        <div class="row no-gutters social-login_wrapper">
+                            <div class="d-flex align-items-crnter social facebook facebook-login">
+                                <div class="icon">
+                                    <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/external-pages/img/facebook_f.png">
+                                </div>
+                                <div class="text">
+                                    <p>Continue with Facebook</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p>
+                    <span>Have an account? </span>
+                    <a data-dismiss="modal" href="" data-toggle="modal" data-target="#login-modal">Sign in</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            <div class="modal fade signup-modal signup_modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="exampleModalLongTitle">
+                    <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/external-pages/img/explara_eye@3x.png"/>
+                    <h5>Sign up</h5>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/external-pages/img/cross.png"/>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row no-gutters form-wrapper">
+                    <form class="col form-input signup-from">
+                        <div class="col-12 wrapper">
+                            <div class="row no-gutters wrapper-container">
+                                <div class="col">
+                                    <div class="form-group input">
+                                        <label for="name_parent" class="editable-label">Name</label>
+                                        <input type="text" class="form-control name" onkeyup="cleanErrorMsg('name','signup-from');" name="name" aria-describedby="name_err_msg" placeholder="Name">
+                                        <p id="name_err_msg" class="form-text err_msg name_err_msg"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 wrapper">
+                            <div class="row no-gutters wrapper-container">
+                                <div class="col">
+                                    <div class="form-group input">
+                                        <label for="exampleInputEmail1" class="editable-label">Email ID</label>
+                                        <input type="email" name="email" class="form-control" id="email_err_msg" aria-describedby="emailHelp" placeholder="Email id">
+                                        <p id="email_err_msg" class="form-text err_msg email_err_msg"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 wrapper">
+                            <div class="row no-gutters wrapper-container">
+                                <div class="col">
+                                    <div class="form-group mobile-input">
+                                        <div class="title">
+                                            <label>Mobile No</label>
+                                        </div>
+                                        <div class="input-group mb-3 ">
+                                            <input class="form-control" placeholder="Mobile No" aria-label="phone_err_msg"  onkeypress="return isNumberKey(event);" onkeyup="cleanErrorMsg('phone','signup-from');" aria-describedby="basic-addon1" name="phone" type="text">
+                                            <p id="phone_err_msg" class="form-text err_msg phone_err_msg"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 wrapper">
+                            <div class="row no-gutters wrapper-container">
+                                <div class="col">
+                                    <div class="form-group input">
+                                        <label for="exampleInputEmail1" class="editable-label">Password</label>
+                                        <input type="password" class="form-control password" name="password" aria-describedby="password_err_msg" placeholder="Password">
+                                        <small id="password_err_msg" class="form-text password_err_msg err_msg"></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <span class="checkbox-section">
+                        <div class="checkbox" id="agreeSignupDiv">
+                            <label>
+                                <input type="checkbox" id="agreeSignup" name="agreeSignup">
+                                <span class="checkbox-material">
+                                    <span class="check"></span>
+                                </span>
+                                By signing up, you agree to our <a href="/terms-of-service" target="_blank"  style="color: #70d5d9 !important;">terms of service</a>
+                            </label>
+                        </div>
+                      </span>
+
+                        <div class="col-12 form-action">
+                            <div class="form-action_wrapper">
+                                <button type="button" class="btn btn-primary submit-btn signup-submit">Sign up</button>
+                            </div>
+                        </div>
+                        <input type="hidden" name="source" value="web">
+                    </form>
+                    <div class="col-2 d-none d-sm-block separator">
+                        <div class="row no-gutters align-items-center separator-wrapper">
+                            <p>or</p>
+                        </div>
+                    </div>
+                    <div class="col d-none d-sm-block social-login">
+                        <div class="row no-gutters social-login_wrapper">
+                            <div class="d-flex align-items-crnter social facebook facebook-login">
+                                <div class="icon">
+                                    <img class="img-fluid" src="https://cdn.explara.com/public/v_10.0/external-pages/img/facebook_f.png">
+                                </div>
+                                <div class="text">
+                                    <p>Continue with Facebook</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--<div class="row no-gutters form-term">
+                    <p>By signing up, you agree to our <a href="https://in.explara.com/terms-of-service" target="_blank">terms of service</a></p>
+                </div>-->
+            </div>
+            <div class="modal-footer">
+                <p>
+                    <span>Already a member?</span> <a data-dismiss="modal" href="" data-toggle="modal" data-target="#login-modal">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+            <script>
+    if($(window).width() < 1000){
+        var pageU = window.location.href;
+        if (pageU.indexOf('?') !== -1){
+            window.location = pageU+'&rf=m';
+        }else {
+            window.location = pageU+'?rf=m';
+        }
+    }
+</script>
+                <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdn.explara.com/public/v_10.0/staytravel-new/js/hotels.js"></script>
+        <script src="https://cdn.explara.com/public/v_10.0/js/login/login-signup.js"></script>
+
+        <script>
+            stayTravelUrl = "https://in.explara.com/staytravel" ;
+            planId        = 189 ;
+            planUrl       = "skochsummit" ;
+            widgetEnable  = "" ;
+            requestFrom   = 'web' ;
+            postAction    = 'loadSamePage';
+            newLoginModal = true;
+                            getHotelList();
+            
+        </script>
+    </body>
+</html>
