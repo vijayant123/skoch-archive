@@ -9,7 +9,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:heading {"textAlign":"center","level":4} -->
-<h4 class="has-text-align-center">Category: primary_category<br>Sub-Category: secondary_category<br>Project: project_name<br>location_string<br>Start Date: project_startdate<br>Organisation: org_name<br>Respondent: respondent_string<br>project_link</h4>
+<h4 class="has-text-align-center">Category: primary_category<br>Sub-Category: secondary_category<br>Project: project_name<br>Start Date: project_startdate<br>Organisation: org_name<br>Respondent: respondent_string<br>project_link</h4>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
