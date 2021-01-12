@@ -1,0 +1,73 @@
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:columns {"verticalAlignment":"center","align":"full"} -->
+<div class="wp-block-columns alignfull are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"align":"center","className":"has-text-align-center has-custom-font"} -->
+<h2 class="has-text-align-center has-custom-font" style="font-family:Lora"><span style="color: #cf2e2e;" class="ugb-highlight"><em>SKOCH Award Nominee</em></span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"textAlign":"center","level":4} -->
+<h4 class="has-text-align-center">Category: primary_category<br>Sub-Category: secondary_category<br>Project: project_name<br>location_string<br>Start Date: project_startdate<br>Organisation: org_name<br>Respondent: respondent_string<br>project_link</h4>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"textAlign":"center","level":4} -->
+<h4 class="has-text-align-center">Voting has been closed for this project. Thank you for participating!</h4>
+<!-- /wp:heading --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:shortcode -->
+[tie_index]Video[/tie_index]
+<!-- /wp:shortcode -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Video</h2>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<iframe src="https://www.youtube.com/embed/1EJln9WeTYc?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="972" height="547" frameborder="0"></iframe>
+<!-- /wp:html -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:shortcode -->
+[tie_index]Presentation[/tie_index]
+<!-- /wp:shortcode -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Presentation</h2>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<p align="center"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT0VE92YRt_9Cv4mGprdj-ZIcaLlqbrLSjsVPPr0Q9-STKcIDuqV1Ok54KHmmsC-Q/embed?start=false&amp;loop=false&amp;delayms=3000" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" width="480" height="389" frameborder="0"></iframe></p>
+<!-- /wp:html -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:shortcode -->
+[tie_index]Contact[/tie_index]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p>For more information, please contact:<br>Dr C L Prahallada, Joint Director at <a href="mailto:jd.mf.kar@gmail.com" target="_blank" rel="noreferrer noopener">jd.mf.kar@gmail.com</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:paragraph -->
+<p><em>(The content on the page is provided by the Exhibitor)</em></p>
+<!-- /wp:paragraph -->
