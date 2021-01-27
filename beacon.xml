@@ -15,7 +15,7 @@
 
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"textAlign":"center","level":4} -->
-<h4 class="has-text-align-center">Voting has been closed for this project. Thank you for participating!</h4>
+<h4 class="has-text-align-center">[ratemypost]</h4>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -33,7 +33,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:html -->
-<iframe src="https://www.youtube.com/embed/1EJln9WeTYc?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="972" height="547" frameborder="0"></iframe>
+<iframe src="video_link" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="972" height="547" frameborder="0"></iframe>
 <!-- /wp:html -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->
@@ -49,7 +49,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:html -->
-<p align="center"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT0VE92YRt_9Cv4mGprdj-ZIcaLlqbrLSjsVPPr0Q9-STKcIDuqV1Ok54KHmmsC-Q/embed?start=false&amp;loop=false&amp;delayms=3000" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" width="480" height="389" frameborder="0"></iframe></p>
+<p align="center"><iframe src="presentation_link" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" maxwidth="480" maxheight="389" frameborder="0"></iframe></p>
 <!-- /wp:html -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->
@@ -61,7 +61,7 @@
 <!-- /wp:shortcode -->
 
 <!-- wp:paragraph -->
-<p>For more information, please contact:<br>Dr C L Prahallada, Joint Director at <a href="mailto:jd.mf.kar@gmail.com" target="_blank" rel="noreferrer noopener">jd.mf.kar@gmail.com</a></p>
+<p>For more information, please contact:<br>contact_string at <a href="mailto:contact_email" target="_blank">contact_email</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->
