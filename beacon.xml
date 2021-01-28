@@ -33,7 +33,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:html -->
-<iframe src="video_link" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="972" height="547" frameborder="0"></iframe>
+<iframe src="https://www.youtube.com/embed/video_id?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="972" height="547" frameborder="0"></iframe>
 <!-- /wp:html -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->
@@ -49,7 +49,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:html -->
-<p align="center"><iframe src="presentation_link" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" maxwidth="480" maxheight="389" frameborder="0"></iframe></p>
+<p align="center">presentation_code</p>
 <!-- /wp:html -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->
