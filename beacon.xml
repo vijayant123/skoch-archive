@@ -33,7 +33,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:html -->
-<iframe src="https://www.youtube.com/embed/video_id?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="972" height="547" frameborder="0"></iframe>
+[iframe src="https://www.youtube.com/embed/video_id?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="972" height="547" frameborder="0"]
 <!-- /wp:html -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->
