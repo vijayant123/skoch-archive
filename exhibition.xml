@@ -13,13 +13,16 @@
 <!-- /wp:heading -->
 
 <!-- wp:heading {"align":"center","level":4} -->
-<h4 class="has-text-align-center">Category: State – Department<br>Sub-Category: Swachh Bharat<br>Project: Swachh Bharat Mission (Gramin)<br>Start Date: 2014-10-02<br>Organisation: Directorate SBM(G) Rajasthan<br>Respondent: Mr. Vishwa Mohan Sharma,Mission Director, Swachh Bharat Mission (Gramin)<br><a href="http://rajpanchayat.rajasthan.gov.in/en-us/announcementcirculars/circulars/sbm(gramin).aspx" target="_blank" rel="noreferrer noopener">http://rajpanchayat.rajasthan.gov.in/en-us/announcementcirculars/circulars/sbm(gramin).aspx</a><br>Level: Club Plus</h4>
+<h4 class="has-text-align-center">Category: category_string<br>Sub-Category: subcategory_string<br>
+  Project: project_string<br>Start Date: date_string<br>Organisation: organisation_string<br>
+  Respondent: respondent_string<br><a href="website_string" target="_blank">website_string</a><br>
+  Level: level_string</h4>
 <!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"align":"center","level":4} -->
-<h4 class="has-text-align-center">Voting has been closed for this project.</h4>
+<h4 class="has-text-align-center">[ratemypost]</h4>
 <!-- /wp:heading --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -33,22 +36,20 @@
 <!-- /wp:shortcode -->
 
 <!-- wp:heading {"align":"center"} -->
-<h2 class="has-text-align-center">Videos</h2>
+<h2 class="has-text-align-center" id="video_title_hook">Video</h2>
 <!-- /wp:heading -->
 
-<!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:html -->
-<iframe src="https://www.youtube.com/embed/HkSCXbIlu7k?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="972" height="547" frameborder="0"></iframe>
-<!-- /wp:html --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:html -->
-<iframe src="https://www.youtube.com/embed/kCK_qAjD690?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="972" height="547" frameborder="0"></iframe>
-<!-- /wp:html --></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns -->
+<!-- wp:html -->
+  <div id="video_hook"></div>
+<script type="text/javascript">
+  var videos="videos_string".split();
+  for (i = 0; i < videos.length; i++) {
+    if(i>0){jQuery("#video_title_hook").text("Videos");}
+    var if_html = `<iframe src="https://www.youtube.com/embed/${videos[i]}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="916" height="515" frameborder="0"></iframe><br />`;
+    jQuery("#video_hook").append(if_html);
+  }
+</script>
+<!-- /wp:html -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->
 <hr class="wp-block-separator is-style-wide"/>
@@ -63,7 +64,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:html -->
-<p align="center"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTsMQVJasi1r_D5QRFcvvs4WCWUDIyWh_3LD_jcQ6Y49pz-XGvoek9ZHaXzzq3Xyw/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="960" height="749" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
+<p align="center">presentation_code</p>
 <!-- /wp:html -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->
@@ -93,83 +94,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:paragraph -->
-<p><strong>Challenges</strong></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Before deployment of project most of the Gram Panchayats (GPs) and Blocks of state were non-ODF GPs, the diarrhoea was the most prevalent killer of Neonates and Children, the aspect of community sanitation and collective time bound effort was missing so as to make Villages, GPs, Blocks and the district, ODF.&nbsp;</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>The experience of Government to engage community for adopting collective change was limited.&nbsp; The cadre required to accomplish this task was missing so as to motivating community and technology promotion. For behavioural change of the society, a trained workforce was needed that could trigger communities. This involved taking the community through a participatory process.&nbsp;</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p><strong>Objective</strong></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>The objective was to provide safety, security and convenience, especially for women and children, by eliminating the shameful habit of open defecation across the state.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><li>ODF-Sustainability: Access to a toilet and continued behavior change</li><li>Solid Waste Management: Effective management of solid waste by at least 80% of households and all public places</li><li>Liquid Waste Management: Effective management of liquid waste by at least 80% of households and all public places</li><li>Visual cleanliness: A village will be classified as visually clean if 80% of households and all public places are observed to have minimal litter and minimal stagnant water and there is no accumulation of plastic waste in the form of a dump in the village.</li></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p><strong>Implementation</strong></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Retrofitting, defined as “adapting the existing toilet without direct contact of sanitation workers or users with excreta, to the standards of safe technology options and users’ convenience”.&nbsp;</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>1<sup>st</sup> Phase: 923 JEN/JTA have been trained in Toilet technology at state level.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>2<sup>nd</sup> Phase: PRI members, District, block level officers and VDO, have been trained in toilets technology.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>3<sup>rd</sup> Phase: 55,853 Masons and Swachhgrahi have been trained at GP level.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>This exercise resulted in 20,381 toilets retrofitted and construction of 8,907 IEC toilets been for educating rural people about right and appropriate toilet technology.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Community Sanitary Complexes Campaign</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><li>A total of 12582 Community sanitary complexes’ were built in Rajasthan</li><li>‘Garib Kalyan Rojgar Abhiyan’ to empower and provide livelihood opportunities in areas/Village witnessing large number of returnee migrant workers affected by the devastating COVID-19</li><li>70% progress achieved during this campaign and got 2<sup>nd</sup> Rank in India for Construction Community Sanitary Complexes</li></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p>Solid and Liquid Waste Management</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><li>Implementation of Modal SLWM in 33 Mahatma Gandhi Adrash Gram Yojana (MGAGY) villages was selected in 33 districts</li><li>Selected 99 NGT GPs in 33 district 8,521 Village will be covered in 33 districts in 2020-2021</li></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p>IEC Activities</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:list -->
-<ul><li>State also has developed key IEC materials for mass communication through Print/Electronic/Social Media</li><li>30 posters on ODF-S and ODF+</li><li>FAQ booklet covering 108 questions on SBM-G</li><li>MHM training module and MHM toolkit for trainers</li><li>12 posters on “CORONA Mahamari se Surakshit Rahe”</li><li>Booklet on “Ghabrahe Nahi Savdhan Rahe”</li><li>That have been provided upto the village level for effective communication upto the last mile</li></ul>
-<!-- /wp:list -->
-
-<!-- wp:paragraph -->
-<p>Before the pre -deployment of the project the rural Rajasthan was having IHHL coverage of only 37% which has now improved to over 90% . Remaining left behind beneficiaries are also being focused in no one left behind campaign, targeting to achieve 100% coverage of IHHL in Rural Rajasthan area .</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph -->
-<p>Swachh Bharat Mission was launched on 2<sup>nd</sup> October 2014 and leading the Mission, State declared itself ODF on 31<sup>st</sup> March 2018.&nbsp;</p>
+<p>Case Study Text</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->
@@ -181,7 +106,7 @@
 <!-- /wp:shortcode -->
 
 <!-- wp:paragraph -->
-<p>For more information, please contact:<br>Mr Parag Choudhary, Manager (STMU) at&nbsp;<a rel="noreferrer noopener" href="mailto:paragchoudhary50@gmail.com" target="_blank">paragchoudhary50@gmail.com</a></p>
+<p>For more information, please contact:<br>contact_string  at <a href="mailto:contact_email" target="_blank">contact_email</a></p>
 <!-- /wp:paragraph -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->
