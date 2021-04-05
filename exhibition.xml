@@ -42,11 +42,15 @@
 <!-- wp:html -->
   <div id="video_hook"></div>
 <script type="text/javascript">
-  var videos="videos_string".split();
+  var videos="videos_string".split(",");
+  if(videos.length > 0 && videos[0].length > 10){
   for (i = 0; i < videos.length; i++) {
     if(i>0){jQuery("#video_title_hook").text("Videos");}
     var if_html = `<iframe src="https://www.youtube.com/embed/${videos[i]}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="916" height="515" frameborder="0"></iframe><br />`;
     jQuery("#video_hook").append(if_html);
+  }
+  } else {
+  jQuery("#video_title_hook").text("");
   }
 </script>
 <!-- /wp:html -->
