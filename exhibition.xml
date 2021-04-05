@@ -40,8 +40,8 @@
 <!-- /wp:heading -->
 
 <!-- wp:html -->
-  <div id="video_hook"></div>
-<script type="text/javascript">
+<div id="video_hook"></div>
+[sc name="exhibtion_videos_1"]
   var videos="videos_string".split(",");
   if(videos.length > 0 && videos[0].length > 10){
   for (i = 0; i < videos.length; i++) {
@@ -52,7 +52,7 @@
   } else {
   jQuery("#video_title_hook").text("");
   }
-</script>
+[sc name="exhibtion_videos_2"]
 <!-- /wp:html -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->
