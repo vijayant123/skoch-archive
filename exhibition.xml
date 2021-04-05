@@ -41,18 +41,8 @@
 
 <!-- wp:html -->
 <div id="video_hook"></div>
-[sc name="exhibtion_videos_1"]
-  var videos="videos_string".split(",");
-  if(videos.length > 0 && videos[0].length > 10){
-  for (i = 0; i < videos.length; i++) {
-    if(i>0){jQuery("#video_title_hook").text("Videos");}
-    var if_html = `[iframe src="https://www.youtube.com/embed/${videos[i]}?rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="916" height="515" frameborder="0"]`;
-    jQuery("#video_hook").append(if_html);
-  }
-  } else {
-  jQuery("#video_title_hook").text("");
-  }
-[sc name="exhibtion_videos_2"]
+<div style="display:none;" id="video_list">videos_string</div>
+[sc name="exhibtion_videos"]
 <!-- /wp:html -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->
