@@ -1,0 +1,96 @@
+<!-- wp:image {"align":"wide","id":14810,"sizeSlug":"full","linkDestination":"media"} -->
+<figure class="wp-block-image alignwide size-full"><a href="https://exhibition.skoch.in/wp-content/uploads/2021/02/directorate-rajasthan-cover-image.jpg"><img src="https://exhibition.skoch.in/wp-content/uploads/2021/02/directorate-rajasthan-cover-image.jpg" alt="" class="wp-image-14810"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:columns {"verticalAlignment":"center","align":"full"} -->
+<div class="wp-block-columns alignfull are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"align":"center","fontFamily":"Lora"} -->
+<h2 class="has-text-align-center has-custom-font" style="font-family:Lora"><span style="color: #cf2e2e;" class="ugb-highlight"><em>SKOCH Award Nominee</em></span></h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"align":"center","level":4} -->
+<h4 class="has-text-align-center">Category: category_string<br>Sub-Category: subcategory_string<br>
+  Project: project_string<br>Start Date: date_string<br>Organisation: organisation_string<br>
+  Respondent: respondent_string<br><a href="website_string" target="_blank">website_string</a><br>
+  Level: level_string</h4>
+<!-- /wp:heading --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"align":"center","level":4} -->
+<h4 class="has-text-align-center">[ratemypost]</h4>
+<!-- /wp:heading --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:shortcode -->
+[tie_index]Videos[/tie_index]
+<!-- /wp:shortcode -->
+
+<!-- wp:heading {"align":"center"} -->
+<h2 class="has-text-align-center" id="video_title_hook">Video</h2>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<div id="video_hook"></div>
+<div style="display:none;" id="video_list">videos_string</div>
+[sc name="exhibtion_videos"]
+<!-- /wp:html -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:shortcode -->
+[tie_index]Presentation[/tie_index]
+<!-- /wp:shortcode -->
+
+<!-- wp:heading {"align":"center"} -->
+<h2 class="has-text-align-center">See Presentation</h2>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<p align="center">presentation_code</p>
+<!-- /wp:html -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:shortcode -->
+[tie_index]Gallery[/tie_index]
+<!-- /wp:shortcode -->
+
+<!-- wp:heading {"align":"center"} -->
+<h2 class="has-text-align-center">Gallery</h2>
+<!-- /wp:heading -->
+
+[embed-google-photos-album link="photoslink_string" mode="gallery-player" ]
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:shortcode -->
+[tie_index]Contact[/tie_index]
+<!-- /wp:shortcode -->
+
+<!-- wp:paragraph -->
+<p>For more information, please contact:<br>contact_string  at <a href="mailto:contact_email" target="_blank">contact_email</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:paragraph -->
+<p><em>(The content on the page is provided by the Exhibitor)</em></p>
+<!-- /wp:paragraph -->
