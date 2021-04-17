@@ -73,7 +73,7 @@
 <!-- /wp:heading -->
 
 <!-- wp:html -->
-<div style="display:none" id="gallery_list_hook">gallery_list</div>
+<div style="display:none" id="gallery_hook">gallery_list</div>
 <div class="splide"><div class="splide__track"><div class="splide__list"><div class="splide__slide">Lorem</div></div></div></div>
 [sc name="exhibtion_videos"]
 <!-- /wp:html -->
