@@ -42,7 +42,6 @@
 <!-- wp:html -->
 <div id="video_hook"></div>
 <div style="display:none;" id="video_list">videos_string</div>
-[sc name="exhibtion_videos"]
 <!-- /wp:html -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->
@@ -70,10 +69,14 @@
 <!-- /wp:shortcode -->
 
 <!-- wp:heading {"align":"center"} -->
-<h2 class="has-text-align-center">Gallery</h2>
+<h2 class="has-text-align-center" id="gallery_title_hook">Gallery</h2>
 <!-- /wp:heading -->
 
-[embed-google-photos-album link="photoslink_string" mode="gallery-player" ]
+<!-- wp:html -->
+<div style="display:none" id="gallery_list">gallery_list</div>
+<div class="splide"><div class="splide__track"><div class="splide__list"><div class="splide__slide">Lorem</div></div></div></div>
+[sc name="exhibtion_videos"]
+<!-- /wp:html -->
 
 <!-- wp:separator {"className":"is-style-wide"} -->
 <hr class="wp-block-separator is-style-wide"/>
