@@ -25,7 +25,7 @@
 <!-- /wp:separator -->
 
 <!-- wp:shortcode -->
-[tie_index]Video[/tie_index]
+[tie_index]Video[/tie_index][sc name="beacon_banner"]
 <!-- /wp:shortcode -->
 
 <!-- wp:heading {"textAlign":"center"} -->
